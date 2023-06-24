@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/oams/static/css/main.7cb6ef9a.css",
-    "main.js": "/oams/static/js/main.3d7c62e2.js",
+    "main.css": "/oams/static/css/main.f879e9d5.css",
+    "main.js": "/oams/static/js/main.877e70d8.js",
     "static/media/colorday (7).png": "/oams/static/media/colorday (7).f19b7307935d97bb7237.png",
     "static/media/colorday (6).png": "/oams/static/media/colorday (6).ad6bcf6dc06dd8f484c5.png",
     "static/media/colorday (2).png": "/oams/static/media/colorday (2).3293d04a476f0f153f90.png",
@@ -21,11 +21,11 @@
     "static/media/header.svg": "/oams/static/media/header.43781ca0e0d3504bdae12c1c47738a0c.svg",
     "static/media/about achievements.svg": "/oams/static/media/about achievements.366ca32d874e57b8ea38b444b7a39727.svg",
     "index.html": "/oams/index.html",
-    "main.7cb6ef9a.css.map": "/oams/static/css/main.7cb6ef9a.css.map",
-    "main.3d7c62e2.js.map": "/oams/static/js/main.3d7c62e2.js.map"
+    "main.f879e9d5.css.map": "/oams/static/css/main.f879e9d5.css.map",
+    "main.877e70d8.js.map": "/oams/static/js/main.877e70d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cb6ef9a.css",
-    "static/js/main.3d7c62e2.js"
+    "static/css/main.f879e9d5.css",
+    "static/js/main.877e70d8.js"
   ]
 }
