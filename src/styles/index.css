@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+:root {
+ --color-primary:#5b53f8;   
+ --color-success:#39d428;   
+ --color-joy:#d19928;   
+ --color-favor:#f742d6;
+ --color-danger: #f26135;      
+ --color-white:#fff ;   
+ --color-light:rgba(255, 255, 255, 0.7);   
+ --color-black:#000;   
+ --color-bg:#0b1b36;   
+ --color-bg1:#1e225c;   
+ --color-bg2:#424890; 
+ --color-bg3:#514acc; 
+ --color-bg4:#5550b8; 
+
+ --container-width-lg: 80%;      
+ --container-width-md: 90%;      
+ --container-width-sm: 100%;      
+ 
+ --transition: all 400ms ease;   
+ --transition-long: all 450ms ease;   
+ --transition-longer: all 2s ease;   
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-white);
+    line-height: 1.7;
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section {
+    width: 100vw;
+    padding: 5rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--color-primary);
+}
+
+.writtings {
+    color: var(--color-light);
+}
+
+h1, h2, h3, h4, h5 {
+    line-height: 1.2;
+}
+
+h1 {font-size: 2.4rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.6rem;}
+h4 {font-size: 1.3rem;}
+
+a {
+    color: var(--color-white);
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+video {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-white);
+    padding: 1rem 2rem;
+    color: var(--color-black);
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+    border-radius: 0.5rem;
+    width: fit-content;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn-primary {
+    background: var(--color-danger);
+    color: var(--color-white);
+    border-radius: 0.5rem;
+    width: fit-content;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: var(--transition-long);
+    transform: translateY(5rem);
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text_fade {
+    opacity: 0;
+    transform: translateX(19rem);
+}
+
+.text_fade.unfade {
+    opacity: 1;
+    transform: translateX(0);
+    transition: var(--transition-longer);
+}
+
+/*=======SMALL SCREENS TABLETS=======*/
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    h1 {font-size: 2.2rem;}
+  
+    h2 {font-size: 1.7rem;}
+  
+    h3 {font-size: 1.4rem;}
+  
+    h4 {font-size:  1.2rem;}
+}
+
+
+/*=======END OF SMALL SCREENS TABLETS=======*/
+
+/*=======SMALL SCREENS PHONES=======*/
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    h2 {font-size: 1.2rem;}
+
+    p {font-size: 0.9rem;}
+
+    a {font-size: 0.9rem;}
+}
+/*=======END OF SMALL SCREENS PHONES=======*/
+
+/*========Animations=============*/

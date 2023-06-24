@@ -1,0 +1,124 @@
+nav {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background: rgba(255,255,255, 0.2);
+    backdrop-filter: blur(25rem);
+    height: 5.1rem;
+    z-index: 10;
+}
+
+.logo {
+    width: 4.3rem;
+    height: 4.8rem;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+/*-----Windows Scroll-----*/
+.nav-scroll {
+    background: var(--color-primary);
+    box-shadow: -3rem 2rem 5rem rgba(0,0,0,0.3);
+}
+
+/*-----------End----------*/
+.nav_menu {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1rem;
+}
+
+.nav_menu li a {
+    position: relative;
+    margin: 0 0.5rem;
+}
+
+.nav_menu li a::after {
+    content: " ";
+    position: absolute;
+    background: var(--color-light);
+    height: 2px;
+    width: 100%;
+    bottom: -6px;
+    left: 0;
+    transform: scale(0);
+    transition: var(--transition);
+    transform-origin: left right;
+}
+
+.nav_menu li a:hover::after {
+    transform: scale(1);
+}
+
+.nav_buttons {
+    display: none;
+}
+
+/*=======SMALL SCREENS TABLETS=======*/
+@media screen and (max-width: 1024px) {
+    .nav_menu {
+        display: none;
+    }
+    .nav_buttons {
+        display: inline-block;
+        background: var(--color-bg);
+        width: max-content;
+        backdrop-filter: blur(10rem);
+        padding: 0.2rem 0.2rem;
+        border-radius: 1.5rem;
+        margin-top: 0.8rem;
+        display: flex;
+        gap: 0.8rem;
+    }
+
+    .nav_buttons a {
+        color: var(--color-light);
+        background: transparent;
+        padding: 0.9rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        display: flex;
+        transition: var(--transition);
+    }
+
+    .nav_buttons a:hover {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10rem);
+    }
+    
+    .nav_buttons a.active {
+        background: var(--color-primary);
+        color: var(--color-bg);
+    }
+    
+
+    .logo {
+        width: 3.3rem;
+        height: 3.8rem;
+    }
+    
+}
+/*=======END OF SMALL SCREENS TABLETS=======*/
+
+/*=======SMALL SCREENS PHONES=======*/
+@media screen and (max-width: 600px) {
+    .nav_buttons {
+        padding: 0.2rem 0.2rem;
+        margin: 0.8rem 1.4rem 0 0;
+        gap: 0.8rem;
+    }
+
+    .logo { 
+        margin: 0 0 0 0.4rem;
+    }
+
+    .nav_buttons a {
+        font-size: 0.9rem;
+    }
+}
+
+/*=======END OF SMALL SCREENS PHONES=======*/

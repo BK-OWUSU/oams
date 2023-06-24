@@ -1,0 +1,90 @@
+.Info_sec {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    margin-bottom: 5rem;
+}
+
+.info_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+
+.info_left h1 {
+    margin-bottom: 1rem;
+} 
+
+.info_left p {
+    font-size: 1.05rem;
+    text-align: justify;
+} 
+
+.info_left a{
+    margin-top: 3rem;
+} 
+
+
+/*=======SMALL SCREENS TABLETS=======*/
+@media screen and (max-width: 1024px) {
+    .Info_sec {
+        height: fit-content;
+    }
+
+   .info_container {
+    grid-template-columns: 55% 40%;
+    gap: 5%;
+   }
+
+    .info_left h1{
+    font-size: 2rem;
+    margin: -1rem 0 0.8rem 0;
+    }
+
+   .info_left p {
+    margin-top: 1rem;
+    }
+
+   .info_left a{
+    margin-top: 2.5rem;
+    }
+
+}
+/*=======END OF SMALL SCREENS TABLETS=======*/
+
+/*=======SMALL SCREENS PHONES=======*/
+@media screen and (max-width: 600px) {
+    .Info_sec {
+        height: fit-content;
+    }
+
+    .info_container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        height: fit-content;
+        margin:0;
+        padding: 0 2rem;
+    }
+    
+    .info_left h1{
+        text-align: center;
+        font-size: 1rem;
+        margin: -1rem 0 0.8rem 0;
+    }
+    
+    .info_left p {
+        margin-top: 1rem;
+        padding: 0.8rem;
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+    
+   .info_left a{
+        margin: 1.5rem 0 0 1rem;
+        font-size: 0.8rem;
+    }
+    
+}
+
+/*=======END OF SMALL SCREENS PHONES=======*/

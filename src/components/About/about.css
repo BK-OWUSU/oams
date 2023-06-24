@@ -1,0 +1,350 @@
+.about_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+}
+
+.achievement {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+    margin-right: 2rem;
+}
+
+.achievement h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.achievement_right p {
+    text-align: justify;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+
+.achievement_right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.achievement_top {
+    margin: 0 2rem 1rem 0;
+    padding: 0 1rem;
+    height: fit-content;
+}
+
+.achievement_top-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.achievement_top-cards article {
+    background: var(--color-bg2);
+    padding: 0.8rem 0;
+    margin: 0.8rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1.3rem;
+    text-align: center;
+    border: 1.5px solid transparent;
+    transition: var(--transition);
+    cursor: default;
+}
+
+.achievement_top-cards article:hover {
+    background: transparent;
+    border-color: var(--color-primary)
+}
+
+.achievement_top-cards article p {
+    text-align: center;
+}
+
+.achieve-icons {
+    background: var(--color-success);
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    margin: 0.8rem;
+    border-radius: 0.6rem;
+}
+
+.achievement_top-cards article:nth-child(2) .achieve-icons {
+    background: var(--color-favor);
+}
+
+.achievement_top-cards article:nth-child(3) .achieve-icons {
+    background: var(--color-joy);
+}
+
+/*==========Advantage section=============*/
+.advantage_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+.advantage_info article {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--color-bg3);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 0 3rem 1rem 0;
+    cursor: default;
+    transition: var(--transition);
+}
+
+.advantage_info article:hover {
+    transform: scale(1.05);
+}
+
+.advantage_info span {
+    font-size: 1.2rem;
+    align-self: flex-start;
+}
+
+/*========Our Staff Section=========*/
+
+.our_staff h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.our_staff-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.staff_members {
+    background: var(--color-bg3);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.staff_members:hover {
+    background: var(--color-bg1);
+    border-color: var(--color-bg3);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.3);
+}
+
+.staff_member_image img {
+    border-radius: 0.5rem;
+    filter: saturate(0);
+}
+
+
+.staff_members:hover img {
+    filter: saturate(1);
+}
+
+.staff_member_info * {
+   text-align: center;
+   margin-top: 1rem; 
+}
+
+.staff_member_socials {
+    position: absolute;
+    background: var(--color-primary);
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.staff_member_socials a {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.staff_members:hover .staff_member_socials {
+    right: 0;
+}
+
+/*=======SMALL SCREENS TABLETS=======*/
+@media screen and (max-width: 1024px) {
+    .achievement_top-cards {
+        grid-template-columns: 1fr;
+        gap: 1.3rem;
+    }
+
+    .achievement h3 {
+        text-align: center;
+        margin-bottom: 0.7rem;
+    }
+    
+    .achievement_right p {
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.05;
+        margin-bottom: 0rem;
+    }
+
+    .about_container, .achievement {
+        position: relative;
+    }
+
+    .our_advantage {
+        position: absolute;
+        left: 0;
+        bottom: 1rem;
+    }
+
+    .advantage_info {
+        grid-template-columns: 1fr;
+    }
+    
+    .advantage_info article {
+        width: 90%;
+    }
+    
+    
+    
+
+ 
+}
+/*=======END OF SMALL SCREENS TABLETS=======*/
+
+/*=======SMALL SCREENS PHONES=======*/
+@media screen and (max-width: 600px) {
+    .achievement {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .achievement_left img {
+        width: 85%;
+        height: 90%;
+        margin: 0 auto;
+    }
+
+
+    .achievement_top {
+        margin: -3rem auto 0 auto;
+        padding: 2.5rem;
+    }
+
+    .achievement_top-cards article h4 {
+        font-size: 0.9rem;
+    }
+
+    .achievement_top-cards {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.2rem;
+        margin-bottom: 0;
+    }
+
+    .achievement_top-cards article {
+        padding: 0rem;
+        text-align: center;
+        gap: 0rem;
+        margin: 0;
+    }
+
+    .achievement_top-cards article p {
+        margin: 0.7rem 0 0.8rem 0;
+    }
+
+    .achievement h3 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+    }
+    
+    .achievement_right p {
+        text-align: justify;
+        font-size: 0.9rem;
+        line-height: 1.7;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .achieve-icons {
+        font-size: 1rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        padding: 0.5rem;
+        margin: 0.8rem 0 0.4rem 0;
+    }
+
+    .about_container, .achievement {
+        position: relative;
+    }
+/*---------------Our Advangate--------------*/
+    .our_advantage {
+        position: relative;
+        margin-top: 1.5rem;
+    }
+
+    .our_advantage h3{
+        margin: 0 0 2.5rem 0;
+    }
+
+    .advantage_info article {
+        width: 75%;
+        height: 70%;
+        gap: 1rem;
+        flex-direction: row;
+        margin: -0.5rem auto;
+        padding: 0;
+    }
+
+    .advantage_info span {
+        font-size: 1rem;
+        align-self: center;
+        margin: 0.5rem 0 0 1rem;
+    }
+
+    .advantage_info p {
+        font-size: 0.85rem;
+        align-self: center;
+        padding: 1rem 0 0rem 0;
+    }
+
+    /*---------Our Staff---------*/
+    
+    .our_staff-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .our_staff {
+        margin: -3rem auto -3rem auto;
+        padding: 3rem;
+    }
+
+    .staff_members {
+        padding: 0.5rem;
+        height: 98%;
+    }
+
+    .staff_members h4 {
+        font-size: 0.8rem;
+        margin: 0.5rem 0;
+    }
+    .staff_members p {
+        font-size: 0.8rem;
+        margin: 0.5rem 0 0 0;
+    }
+    
+    .staff_member_socials a {
+        padding: 0.4rem;
+        font-size: 0.8rem;
+    }
+    
+}
+
+/*=======END OF SMALL SCREENS PHONES=======*/

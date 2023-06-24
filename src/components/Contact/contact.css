@@ -1,0 +1,46 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+input, textarea {
+    width: 70%;
+    margin: 0 auto;
+    background: var(--color-bg1);
+    padding: 1.2rem;
+    font-size: 1.05rem;
+    color: var(--color-light);
+    border-radius: 0.5rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    align-self: center;
+}
+
+/*========TABLETS SCREENS===========*/
+@media screen and (max-width:1024px) {
+    input, textarea {
+        width: 90%;
+    }
+
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    form button {
+        font-size: 0.8rem;
+    }
+}
+/*========END===========*/

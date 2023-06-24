@@ -1,0 +1,129 @@
+header {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header_info_container {
+    width: 47rem;
+    height: 8rem;
+    overflow: hidden;
+}
+
+.header_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header_container::before {
+    content: " ";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header_content {
+    position: absolute;
+    width: 60%;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+}
+
+.header_content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header_content small {
+    font-size: larger;
+    line-height: 1;
+    padding-right: 8rem;
+}
+
+.header_links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+/*=======SMALL SCREENS TABLETS=======*/
+@media screen and (max-width: 1024px) {
+    .header_container {
+        margin: 0 auto;
+    }
+
+    .header_info_container {
+        width: 30rem;
+        height: 8rem;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .header_content {
+        text-align: center;
+        width: 85%;
+    }
+    .header_content h2 {
+        margin: 8rem 0 3rem 0;
+        font-size: 2.2rem;
+    }
+    
+    .header_links {
+        justify-content: center;
+        margin-top: 5rem;
+        gap: 3rem;
+    }
+}
+/*=======END OF SMALL SCREENS TABLETS=======*/
+
+/*=======SMALL SCREENS PHONES=======*/
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .header_container{
+        margin: 0 auto;
+    }
+
+    .header_content {
+        width: 85%;
+        bottom: 40%;
+    }
+
+    .header_content h2 {
+        margin: -5rem 0 2rem 0;
+        font-size: 2rem;
+    }
+/*==========END OF EADER ANIMATION==========*/
+   
+    .header_info {
+        padding: 0;
+        margin: 0.5rem 0.2rem 0 0.2rem;
+        font-size: 0.9rem;
+    }
+
+    .header_info_container {
+        width: 20rem;
+        height: 8rem;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    .header_links {
+        margin-top: 5rem;
+        gap: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/*=======END OF SMALL SCREENS PHONES=======*/

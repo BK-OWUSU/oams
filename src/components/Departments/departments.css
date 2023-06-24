@@ -1,0 +1,88 @@
+.department_container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+.department {
+    background: var(--color-bg1);
+    border-radius: 2rem;
+    overflow: hidden;
+    cursor: default;
+    border: 1.5px solid transparent;
+}
+
+.department:hover {
+    background: transparent;
+    border-color: var(--color-bg3);
+}
+
+.department_img {
+    overflow: hidden;
+    height: 15rem;
+    margin-bottom: 1rem;
+}
+
+.department_img img {
+    transform: scale(1);
+    transition: 700ms ease;
+}
+
+.department:hover .department_img {
+    transform: scale(1.1);
+    transition: 700ms ease;
+}
+
+.department_info {
+    text-align: center;
+}
+
+.department_info h3 {
+    padding-bottom: 1rem;
+}
+
+.department_info p {
+    margin: 1rem 0.5rem 1rem;
+}
+
+
+/*=======SMALL SCREENS TABLETS=======*/
+@media screen and (max-width: 1024px) {
+    .department_container {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+    }
+    
+}
+/*=======END OF SMALL SCREENS TABLETS=======*/
+
+/*=======SMALL SCREENS PHONES=======*/
+@media screen and (max-width: 600px) {
+    .department_container {
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
+        gap: 1rem;
+    }
+
+    .department {
+        padding: 0;
+        margin: 0 1rem 0.5rem 1rem;
+    }
+
+    .department_info h4 {
+        font-size: 1rem;
+    }
+
+    .department_info p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .department_img {
+        height: 12rem;
+        margin-bottom: 0.8rem;
+    }
+    
+}
+
+/*=======END OF SMALL SCREENS PHONES=======*/
